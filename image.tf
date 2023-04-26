@@ -3,9 +3,9 @@ resource "docker_image" "taskoverflow" {
  build { 
    context = "." 
  } 
-} 
+}
 
-resource "docker_registry_image" "taskoverflow" { 
+resource "docker_registry_image" "taskoverflow" {
  name = docker_image.taskoverflow.name 
 }
 
